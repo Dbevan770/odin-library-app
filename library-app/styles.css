@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto+Mono&family=Work+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    background: lightgray;
+    color: #000;
+}
+
+.site-header {
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(0,0,0, 0.16) 0 1px 4px;
+    font-family: "Work Sans", monospace;
+}
+
+.site-nav-bar {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-book-btn {
+    background-color: lightgray;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.site-content-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.is-empty {
+    align-items: center;
+}
+
+.book-grid {
+    height: 100%;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 1rem;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #fff;
+    font-family: "Nunito", sans-serif;
+}
+
+.empty-text-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-library{
+    font-size: 2em;
+    font-family: "Work Sans", monospace;
+}
+
+.site-footer {
+    width: 100%;
+    gap: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.github-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.invisible {
+    visibility: hidden;
+}
